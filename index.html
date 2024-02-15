@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script&family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!--navbar-->
+    <div   class="navbar">
+        <h2  data-aos="fade-down-left"><i class="fa-brands fa-the-red-yeti"></i></i> Reps <b>ta</b></h2>
+        <div class="navbarlinks">
+            <p class="navbarlink"  data-aos="flip-right"><a href="index.html">Home</a></p>
+            <p class="navbarlink"  data-aos="flip-right"><a href="#prod">products</a></p>
+            <p class="navbarlink"  data-aos="flip-right"><a href="#contact">contact</a></p>
+            <p class="navbarlink"  data-aos="flip-right"><a href="#texts">Categories</a></p>
+            <p class="navbarlink"  data-aos="flip-right"><a href="#customers">customers</a></p>
+
+        </div>
+
+        <div class="suc">
+            <div class="searchi">
+                <i class="fa-solid fa-magnifying-glass" onclick="showss()" ondblclick="closeds()"></i>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="users" id="userd">
+                <i class="fa-solid fa-user" onclick="showse()" ondblclick="closede()"></i>
+            </div>
+            <div class="login-container" id="login">
+              <form id="login-form">
+                <div class="form-group">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+                  <p>forgot your password <a href="#">click here</a></p>
+                  <p>dont have an account <a href="#">create here</a></p>
+                </div>
+                <button type="submit">Login</button>
+                
+              </form>
+            </div>
+            
+            
+            <div class="box">
+                <div class="cart-count">2</div>
+
+               
+                <i class="fa-solid fa-cart-shopping" id="cart-icon" onclick="shows()"></i>
+            
+            </div>
+
+        </div>
+    
+        
+        <div class=" cart-active">
+            <div class="cart-title">Cart items</div>
+            <div class="cart-content">
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="download.jpg" alt="" class="cart-img">
+                    </div>
+                    
+                    <div class="detail-box">
+                        <div class="cart-food-title">orange</div>
+                        <div class="price-box">
+                            <div class="cart-price">Rs.100</div>
+                        </div>
+                        <input type="number" placeholder="1">
+                    </div>
+                    <i class="fa-solid fa-trash" id="cart-remove"></i>
+                </div>
+                <div class="cart-box">
+                    <div class="image">
+                        <img src="download (1).jpg" alt="" class="cart-img">
+                    </div>
+                    <div class="detail-box">
+                        <div class="cart-food-title">Strawberry</div>
+                        <div class="price-box">
+                            <div class="cart-price">Rs250</div>
+                        </div>
+                        <input type="number" placeholder="1">
+                    </div>
+                    <i class="fa-solid fa-trash" id="cart-remove"></i>
+                    
+                </div>
+            </div>
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">Rs.350</div>
+            </div>
+            <button class="btn-buy" >place order</button>
+            <i class="fa-solid fa-x" id="cart-close" onclick="closed()"></i>
+
+        </div>
+        
+        <div class="toggle" onclick="showsnavbar()">
+            <i class="fa-solid fa-bars"  ></i>
+        </div>
+    </div>
+   
+    <!--side-navbar-->
+    <div class="side-navbar">
+        <div class="cancel">
+            <p>
+                <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
+            </p>
+
+
+        </div>
+
+        <div class="side-navbar-link">
+            <p class="navbarlink"><a href="index.html">Home</a></p>
+            <p class="navbarlink"><a href="#prod">products</a></p>
+            <p class="navbarlink"><a href="#contact">contact</a></p>
+            <p class="navbarlink"><a href="#texts">Categories</a></p>
+            <p class="navbarlink"><a href="#customers">customers</a></p>
+
+            
+        </div>
+    </div>
+    
+    <!--header-->
+    <div class="header">
+        <div>
+            
+            <h1 >order your best
+                
+                    <span data-text="Fruits and Vegetables">Fruits and Vegetables </span>
+                    
+                </h1>
+                
+            <h6  >we are always near to you with fresh item <button>shop now</button></h6>
+        </div>
+        <div class="header-image">
+            <img   data-aos="fade-down-right" src="circle-PhotoRoom.png-PhotoRoom.png" alt="">
+           
+           
+        </div>
+        
+
+    </div>
+
+    <!--new arrival-->
+    <section id="texts">
+        <div class="text">
+            <h2 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Browse our Hottest</h2>
+            <h3 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Categories</h3>
+            <button data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrival">
+
+            <div  data-aos="flip-left" class="new-arrival-container">
+                <img src="OIP (1).jpg" alt="">
+                <a href="fruits.html"><h3>Fruits</h3></a>
+            
+
+            </div>
+            <div data-aos="flip-left" class="new-arrival-container">
+                <img src="OIP (2).jpg" alt="">
+                <a href="vegetables.html"><h3>Vegetables</h3></a>
+
+            </div>
+            <div data-aos="flip-left" class="new-arrival-container">
+                <img src="OIP (3).jpg" alt="">
+                <a href="drinks.html"><h3>Drinks</h3></a>
+
+            </div>
+            <div data-aos="flip-left" class="new-arrival-container">
+                <img src="OIP (4).jpg" alt="">
+                <a href="nuts.html"><h3>Nuts</h3></a>
+                
+
+            </div>
+            <div data-aos="flip-left" class="new-arrival-container">
+                <img src="OIP (5).jpg" alt="">
+                <a href="spicy.html"><h3>Spices</h3></a>
+                
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <div   data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"  class="hero">
+        <div class="heroimg">
+            <img src="girlsf-PhotoRoom.png-PhotoRoom.png" alt="" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        </div>
+        <div class="herocont" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+            <h1 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Best organic fruits and vegetables</h1>
+            <p data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> fruits and vegetables emerge as the colorful gems, enriching our lives with a symphony of flavors and a plethora of nutrients. </p>
+            <p data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> . Fruits, with their juicy sweetness, burst forth in an array of hues, each bite delivering a refreshing sensation that awakens the senses.  </p>
+           
+
+            <h4 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-apple-whole"></i></i>fresh juice</h4>
+            <h4 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-apple-whole"></i></i>organic fruits</h4>
+            <h4 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-apple-whole"></i></i>healthy vegetables</h4>
+        </div>
+    </div>
+    <div   data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="glass">
+        <div class="glasscont">
+            <h1 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">variety of juices  and milkshake</h1>
+        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" >Life is full of choices, orange juice or apple juice</p>
+        
+        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> Freshly squeezed ideas make the best creative juices. </p>
+        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> Juice up your day with positivity and good vibes</p>
+        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">The sweetest juice is the one shared with friend</p>
+       
+        
+        
+        <h4 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-martini-glass-citrus"></i></i>Cranberry Juice</h4>
+        <h4 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-martini-glass-citrus"></i></i>Pomegranate Juice</h4>
+        <h4 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-martini-glass-citrus"></i></i>Pineapple juice</h4>
+
+        </div>
+        
+        <div class="glimg">
+            <img src="thumb-1920-449143-PhotoRoom.png-PhotoRoom.png" alt=""data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        </div>
+       
+
+        
+    </div>
+    <div  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="heros">
+        <div class="herosimg">
+            <img src="h-peanuts_2-PhotoRoom.png-PhotoRoom.png" alt="" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        </div>
+        <div class="heroscont">
+            <h1 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Best time to eat nuts</h1>
+            <p  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> Nuts are nature's way of making up for Mondays.</p>
+            <p  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"> Sometimes you feel like a nut, sometimes you don't." - Almond Joy commercial slogan. </p>
+            <p  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Life is like a bowl of mixed nuts. You never know what you're gonna get.</p>
+            <p  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">I'm just a cashew looking for my macadamia</p>
+           
+
+            <h4  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-circle-check"></i>almonds</h4>
+            <h4  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-circle-check"></i>brazilnuts</h4>
+            <h4  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"><i class="fa-solid fa-circle-check"></i>cashews</h4>
+        </div>
+    </div>
+
+    <section  id="prod">
+        
+        <div  class="text">
+            <h2  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Most popular </h2>
+            <h3  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Products</h3>
+            <button  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">shop now <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="new-arrivals">
+            <div data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="800"class="new-arrival-containers">
+                <img src="download.jpg" alt="">
+                <h3>orange</h3>
+                <p>Rs.100</p><i class="fa-solid fa-cart-shopping" onclick="shew()" id="stay"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="1300" class="new-arrival-containers">
+                <img src="download (1).jpg" alt="">
+                <h3>Strawberry</h3>
+                <p>Rs.250</p><i class="fa-solid fa-cart-shopping" id="stay"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="1700" class="new-arrival-containers">
+                <img src="pine.jpg" alt="">
+                <h3>Pineapple</h3>
+                <p>Rs.60</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" class="new-arrival-containers">
+                <img src="potato.jpg" alt="">
+                <h3>Potato</h3>
+                <p>Rs.20</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="800" class="new-arrival-containers">
+                <img src="carrot.jpg" alt="">
+                <h3>Carrot</h3>
+                <p>Rs.20</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+            <div data-aos="flip-right" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1300" class="new-arrival-containers">
+                <img src="OIP (6).jpg" alt="">
+                <h3>Apple</h3>
+                <p>Rs.200</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="1700" class="new-arrival-containers">
+                <img src="pump.jpg" alt="">
+                <h3>Pomegranate</h3>
+                <p>Rs.250</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+            <div data-aos="flip-right"data-aos-easing="ease-out-cubic"
+            data-aos-duration="2100" class="new-arrival-containers">
+                <img src="mango.jpg" alt="">
+                <h3>Mango</h3>
+                <p>Rs.70</p><i class="fa-solid fa-cart-shopping"></i>
+
+            </div>
+    </section>
+    <section  id="about">
+        <div data-aos="zoom-in" class="headers">
+            <div>
+                
+
+                <h1  data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="style">About us </h1>
+                <div class="cl">
+                    <div class="p1">
+                        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">repsta 24 is a modern International agricultural exchange.</p>
+                        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">We gather the agricultural and fruit growing community in one place.</p>
+                        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">In  producers and buyers can acquire commercial contacts</p>
+                        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">and cooperate in an <b>easy and fast way</b> . You can add and view advertisement,</p>
+                        <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">In repsta24 producers and cooperate in an easy and fast way. </p>
+                            
+
+                    </div>
+                    <div class="p2">
+                       <h1 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Who uses Repsta 24?</h1> 
+                    </div>
+                    <div class="p3">
+                        <ul data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                            <li data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">fruits growers</li>
+                            <li data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">farmers</li>
+                            <li data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Distributors of agricultural products</li>
+                            <li data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Exporters of agricultural products</li>
+                            <li data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Importers of agricultural products</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="btn"><button>learn more</button></div>
+
+
+                
+            </div>
+            <div data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="header-images">
+                <img src="d3-PhotoRoom.png-PhotoRoom.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    
+    <section data-aos="fade-down-right" class="customers" id="customers">
+        <h2 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">why customers's love us ?</h2>
+        <div class="customers-container">
+            <div class="box"data-aos="zoom-in-right">
+                <i class="fa-solid fa-quote-left"></i>
+                <div class="stars" >
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eum impedit similique nesciunt, enim necessitatibus hic deleniti autem dicta ad?</p>
+                <div class="review-profile">
+                    <img src="steve-jobs-thinking-515059120297iwa9zqqxh.png" alt="">
+                <h3>steve</h3>
+                </div>                
+            </div>    
+            <div class="box" data-aos="zoom-in-right">
+                <i class="fa-solid fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eum impedit similique nesciunt, enim necessitatibus hic deleniti autem dicta ad?</p>
+                <div class="review-profile">
+                    <img src="girl-eating-carrot-with-horse-dbc.png" alt="">
+                <h3>fasella</h3>
+                </div>                
+            </div>    
+            <div class="box"data-aos="zoom-in-right">
+                <i class="fa-solid fa-quote-left"></i>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eum impedit similique nesciunt, enim necessitatibus hic deleniti autem dicta ad?</p>
+                <div class="review-profile">
+                    <img src="girls-uzj.png" alt="">
+                <h3>lasiraa</h3>
+                </div>                
+            </div> 
+           
+        </div>
+    </section>
+    
+    <link rel="stylesheet" href="styles.css">
+
+ 
+
+
+ <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"  class="containers">
+
+    <div class="checkout-form">
+        <h2 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Checkout</h2>
+        
+        <!-- User Information -->
+        <div class="form-group">
+            <label for="name" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Name:</label>
+            <input type="text" id="name" placeholder="" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        </div>
+
+        <div class="form-group">
+            <label for="email" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Email:</label>
+            <input type="email" id="email" placeholder="" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+        </div>
+
+        <!-- Shipping Address -->
+        <div class="form-group">
+            <label for="address" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Shipping Address:</label>
+            <textarea id="address" placeholder="Enter your shipping address" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"></textarea>
+        </div>
+
+        <!-- Payment Information -->
+        <div class="form-group">
+            <label for="card-number" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Card Number:</label>
+            <input type="text" id="card-number" placeholder="" required data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
+        </div>
+
+        
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3 data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">Order Summary</h3>
+            <!-- Display the products in the order with their prices -->
+            <!-- You can dynamically generate this based on the user's cart -->
+
+            <p data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">Total: </p>
+        </div>
+
+        <!-- Submit Button -->
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+ </div>
+
+  <script src="script.js"></script>
+     
+  
+    <div   class="shipp">
+        <div class="shipp1">
+            <h1  data-aos="fade-left"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine">Secure Payment</h1>
+            <p  data-aos="fade-right"
+         data-aos-offset="300"
+         data-aos-easing="ease-in-sine">all services required to transport products purchased online</p>
+        </div>
+        <div class="shippbox">
+            <div  data-aos="flip-left"class="shippbox1">
+                <i class="fa-solid fa-truck-fast" ></i>
+                <h2>free shipping</h2>
+                <p>with rs.500 above purchased </p>
+                <p>you will get freeshipping</p>
+    
+            </div>
+            <div  data-aos="flip-left"class="shippbox2">
+                <i class="fa-solid fa-credit-card"></i>
+                <h2>Secure payment</h2>
+                <p> payment processing information </p>
+                <p>service that provide</p>
+    
+            </div>
+            <div data-aos="flip-left" class="shippbox3">
+                <i class="fa-regular fa-circle-check"></i>
+               
+                <h2>organic certified</h2>
+                <p>100% organic products</p>
+                
+    
+            </div>
+            <div data-aos="flip-left" class="shippbox4">
+                <i class="fa-solid fa-shield"></i>
+                
+                <h2>safe delivery</h2>
+                <p>100% safe </p>
+              
+    
+            </div>
+    
+        </div>
+
+   
+     </div>
+
+
+    
+    
+        
+        
+    
+    <section id="contact">
+        
+    <div  class="bttns">
+        <div  class="container">
+            <form>
+                <label for="name" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Name:</label>
+                <input type="text" id="name" name="name" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    
+                <label for="email" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Email:</label>
+                <input type="email" id="email" name="email" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    
+                <label for="message" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Message:</label>
+                <textarea id="message" name="message" rows="4" required data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"></textarea>
+    
+                <button type="submit" id="color" onclick="changeColor()" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">Submit</button>
+            </form>
+            <div class="container1">
+                <h1 data-aos="fade-left"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">Reach us</h1>
+                <p data-aos="fade-right"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"><i class="fa-regular fa-envelope"></i>    repsta.@gmail.com</p>
+                <p data-aos="fade-left"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"><i class="fa-solid fa-phone"></i>     9080870230</p>
+                <p data-aos="fade-right"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"><i class="fa-solid fa-house"></i>    riverroad west street</p>
+            </div>
+            <div class="cont3">
+                <h1 data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">contact us</h1>
+                <p data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">Lorem, ipsum dolor sit amet consectetur aut fuga distinctio id?</p>
+                <i  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"class="fa-brands fa-instagram"></i>
+                        <i data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="fa-brands fa-twitter"></i>
+                        <i data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="fa-brands fa-facebook"></i>
+                        <i data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        
+    </div>
+
+    </section>
+    
+    <!--footer-->
+
+    <div  class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <div class="boxo">
+                    <h3><i class="fa-brands fa-the-red-yeti"></i>
+                        Reps
+                    </h3><h2>ta</h2>
+                    <p>riverroad street</p>
+                    <div class="footer-icon-container">
+                    
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="boxt">
+                    <h2>Categories</h2>
+                    <p>fruits and Vegetables</p>
+                    <p>dairy products</p>
+                    <p>package food</p>
+                    <p>bevarage</p>
+                </div>
+                <div class="boxth">
+                    <h2>useful links</h2>
+                    <p>payments</p>
+                    <p>term of use</p>
+                    <p>account</p>
+                    <p>return policy</p>
+                </div>
+                <div class="boxf">
+                    <h2>News letter</h2>
+                    <p>get 10%discount</p>
+                    <input type="email" placeholder="your email">
+                </div>
+            
+            </div>
+            <p>repsta2024@gmail.com</p>
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance:'60px',
+            
+             duration:500,
+             delay:300 
+        });
+        ScrollReveal().reveal('    .container,  .cart-active, ',  { delay: 500 ,origin:'flip-right'});
+      
+    </script>
+    
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
